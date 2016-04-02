@@ -16,7 +16,7 @@ $num_total_registros = mysqli_num_rows($rs_noticias);
 //Si hay registros
 if ($num_total_registros > 0) {
 	//Limito la busqueda
-	$TAMANO_PAGINA = 9;
+	$TAMANO_PAGINA = 6;
         $pagina = false;
 
 	//examino la pagina a mostrar y el inicio del registro a mostrar
@@ -43,16 +43,17 @@ if(!$result = mysqli_query($conn, $query)) die();
 							<div class="product-image-wrapper">
 								<div class="single-products">
 										<div class="productinfo text-center">
-											<img src="images/home/<?php echo $row[1] ?>" alt="" />
+											
+											<img src="data:image/jpeg;base64,<?php echo base64_encode( $row['logo'] );?>"/>
 											<h2>$ <?php echo $row[2] ?></h2>
 											<p><?php echo $row['nombre'] ?></p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
 										</div>
 										<div class="product-overlay">
 											<div class="overlay-content">
 												<h2>$ <?php echo $row[2] ?></h2>
 												<p><?php echo $row['nombre'] ?></p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
 											</div>
 										</div>
 								</div>
