@@ -32,16 +32,13 @@
 			<div class="row">
 				<div class="col-sm-3">
 						<?php include('left_sidebar.php') ?>
-					
 				</div>
-				
 				    <div class="col-sm-9 padding-right">
-					<div class="product-details"><!--product-details-->
-						
-						<?php include('product-detail3.php'); ?>
-					</div><!--/product-details-->
+						<div class="product-details"><!--product-details-->
+							<?php include('product-detail3.php'); ?>
+						</div><!--/product-details-->
 					
-				</div>
+					</div>
 				<div class="col-sm-9 padding-right">
 				</div>
 			</div>
