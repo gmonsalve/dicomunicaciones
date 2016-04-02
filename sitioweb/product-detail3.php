@@ -52,7 +52,7 @@ if(!$result = mysqli_query($conn, $query)) die();
 					<input type="text" value="3" />
 					<button type="button" class="btn btn-fefault cart">
 						<i class="fa fa-shopping-cart"></i>
-						Add to cart
+						añadir al carrito
 					</button>
 	     		</span>
 				<p><b>Disponible:</b> SI</p>
