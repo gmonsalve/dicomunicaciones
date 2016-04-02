@@ -20,7 +20,7 @@ if(!$result = mysqli_query($conn, $query)) die();
 	{ //var_dump($row)
     	?><div class="col-sm-12 product-information">
 			<div class="col-sm-6"><!--/product-information-->
-				<h2>Marca: </b><?php echo $row['id_marcacel'] ?></h2>
+				<h2>Marca: </b><?php echo $row['nombre'] ?></h2>
 				<h2>Modelo:<b><?php echo $row['nombre'] ?></b></h2>
 			    <img src="data:image/jpeg;base64,<?php echo base64_encode( $row['logo'] );?>"/>
 				<span>
@@ -33,6 +33,7 @@ if(!$result = mysqli_query($conn, $query)) die();
 					 Comprar
 					</button>
 	     		</span>
+	     		<a href="../sitioweb/index.php"><img src="images/back.png" class="share img-responsive"  alt="" /></a>
 			</div><!--/product-information-->
 			<div class="col-sm-6">
 				
@@ -52,5 +53,4 @@ if(!$result = mysqli_query($conn, $query)) die();
 	}
 $close = mysqli_close($conn) 
 or die("Ha sucedido un error inexperado en la desconexion de la base de datos");
-
 ?>
