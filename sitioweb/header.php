@@ -59,24 +59,24 @@
 						</div>
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
-								<li><a href="index.html" class="active">Home</a></li>
+								<li><a href="index.php" class="active">Home</a></li>
 								<li class="dropdown"><a href="#">Servicios<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="shop.php">Planes</a></li>
-										<li><a href="product-details.php">Paquetes</a></li>
+										<li><a href="#">Paquetes</a></li>
                                     </ul>
                                 </li> 
 								<li class="dropdown"><a href="#">Productos<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
-                                        <li><a href="blog.html">Blog List</a></li>
-										<li><a href="blog-single.html">Blog Single</a></li>
+                                        <li><a href="#">Celulares</a></li>
+										<li><a href="#">Tablets</a></li>
                                     </ul>
                                 </li>
 								<li class="dropdown"><a href="#">Accesorios<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
-                                        <li><a href="blog.html">Iphone</a></li>
-										<li><a href="blog-single.html">Samnsung</a></li>
-										<li><a href="blog-single.html">WindowsPhone</a></li>
+                                        <li><a href="#">Iphone</a></li>
+										<li><a href="#">Samnsung</a></li>
+										<li><a href="#">WindowsPhone</a></li>
                                     </ul>
                                 </li>
 								<li><a href="contact-us.php">Contactenos</a></li>

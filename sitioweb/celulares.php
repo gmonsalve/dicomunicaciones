@@ -47,13 +47,13 @@ if(!$result = mysqli_query($conn, $query)) die();
 											<img src="data:image/jpeg;base64,<?php echo base64_encode( $row['logo'] );?>"/>
 											<h2>$ <?php echo $row['valor'] ?></h2>
 											<p><?php echo $row['nombre'] ?></p>
-											<a href="/sitioweb/product-details.php?id_celulares=<?php echo $row['id_celulares'] ?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Detalles</a>
+											<a href="../sitioweb/product-details.php?id_celulares=<?php echo $row['id_celulares'] ?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Detalles</a>
 										</div>
 										<div class="product-overlay">
 											<div class="overlay-content">
 												<h2>$ <?php echo $row['valor'] ?></h2>
 												<p><?php echo $row['nombre'] ?></p>
-												<a href="/sitioweb/product-details.php?id_celulares=<?php echo $row['id_celulares'] ?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Detalles</a>
+												<a href="../sitioweb/product-details.php?id_celulares=<?php echo $row['id_celulares'] ?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Detalles</a>
 											</div>
 										</div>
 								</div>
