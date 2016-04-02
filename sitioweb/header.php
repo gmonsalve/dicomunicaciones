@@ -27,7 +27,7 @@
 				<div class="row">
 					<div class="col-sm-4">
 						<div class="logo pull-left">
-							<a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+							<a href="index.php"><img src="images/home/logo.png" alt="" /></a>
 						</div>
 						<div class="btn-group pull-right">
 
@@ -63,7 +63,7 @@
 								<li class="dropdown"><a href="#">Servicios<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="shop.php">Planes</a></li>
-										<li><a href="product-details.html">Paquetes</a></li>
+										<li><a href="product-details.php">Paquetes</a></li>
                                     </ul>
                                 </li> 
 								<li class="dropdown"><a href="#">Productos<i class="fa fa-angle-down"></i></a>
@@ -79,7 +79,7 @@
 										<li><a href="blog-single.html">WindowsPhone</a></li>
                                     </ul>
                                 </li>
-								<li><a href="contact-us.html">Contactenos</a></li>
+								<li><a href="contact-us.php">Contactenos</a></li>
 							</ul>
 						</div>
 					</div>

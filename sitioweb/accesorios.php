@@ -43,18 +43,18 @@ if(!$result = mysqli_query($conn, $query)) die();
 							<div class="product-image-wrapper">
 								<div class="single-products">
 										<div class="productinfo text-center">
-											<img src="images/home/<?php echo $row['logo'] ?>" alt="" />
+											<img src="data:image/jpeg;base64,<?php echo base64_encode( $row['logo'] )?>"/>
 											<h2>$ <?php echo $row['valor'] ?></h2>
 											<p><?php echo $row['tipo'] ?></p>
 											<p><?php echo $row['nombre'] ?></p>
-											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
 										</div>
 										<div class="product-overlay">
 											<div class="overlay-content">
 												<h2>$ <?php echo $row['logo'] ?></h2>
 												<p><?php echo $row['tipo'] ?></p>
 												<p><?php echo $row['nombre'] ?></p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Comprar</a>
 											</div>
 										</div>
 								</div>

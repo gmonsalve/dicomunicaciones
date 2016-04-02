@@ -1,22 +1,23 @@
+
 <?php 
 //connect to DB
 $server = "localhost";
 $user = "root";
 $pass = "";
 $bd = "dcomunicaciones";
-$url ="http://localhost/diegocomunicaciones/sitioweb/index.php";
+$url ="http://localhost/diegocomunicaciones/sitioweb/product-details.php";
 //Creamos la conexión
 $conn = mysqli_connect($server, $user, $pass, $bd) 
 or die("Ha sucedido un error inexperado en la conexion de la base de datos");
 /**/
-$query_registros = "SELECT logo,nombre, valor FROM celulares ";
+$query_registros = "SELECT * FROM celulares";
 $rs_noticias = mysqli_query($conn, $query_registros);
 $num_total_registros = mysqli_num_rows($rs_noticias);
 
 //Si hay registros
 if ($num_total_registros > 0) {
 	//Limito la busqueda
-	$TAMANO_PAGINA = 6;
+	$TAMANO_PAGINA = 4;
         $pagina = false;
 
 	//examino la pagina a mostrar y el inicio del registro a mostrar
@@ -34,31 +35,32 @@ if ($num_total_registros > 0) {
 	$total_paginas = ceil($num_total_registros / $TAMANO_PAGINA);
 /**/
 //execute query
-$query = "SELECT id_celulares, logo, nombre, valor FROM celulares "; 
+$query = "select * from celulares"; 
 if(!$result = mysqli_query($conn, $query)) die();
  
 	while($row = mysqli_fetch_array($result)) 
-	{ 
-		?><div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											
-											<img src="data:image/jpeg;base64,<?php echo base64_encode( $row['logo'] );?>"/>
-											<h2>$ <?php echo $row['valor'] ?></h2>
-											<p><?php echo $row['nombre'] ?></p>
-											<a href="/sitioweb/product-details.php?id_celulares=<?php echo $row['id_celulares'] ?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Detalles</a>
-										</div>
-										<div class="product-overlay">
-											<div class="overlay-content">
-												<h2>$ <?php echo $row['valor'] ?></h2>
-												<p><?php echo $row['nombre'] ?></p>
-												<a href="/sitioweb/product-details.php?id_celulares=<?php echo $row['id_celulares'] ?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Detalles</a>
-											</div>
-										</div>
-								</div>
-							</div>
-						</div>
+	{// var_dump($row)
+    	?><div class="col-sm-6">
+			<div class="product-information"><!--/product-information-->
+				
+				<h2><?php echo $row['nombre'] ?></h2>
+				<p>Web ID: 1089772</p>
+				<img src="images/product-details/<?php $row['logo'] ?>" alt="" />
+				<span>
+					<span>$ <?php echo $row['valor'] ?></span>
+					<label>Cantidad:</label>
+					<input type="text" value="3" />
+					<button type="button" class="btn btn-fefault cart">
+						<i class="fa fa-shopping-cart"></i>
+						añadir al carrito
+					</button>
+	     		</span>
+				<p><b>Disponible:</b> SI</p>
+				<p><b>Estado:</b> Nuevo</p>
+				<p><b>Marca:</b><?php echo $row['id_marcacel'] ?>	</p>
+				<a href=""><img src="images/product-details/share.png" class="share img-responsive"  alt="" /></a>
+			</div><!--/product-information-->
+		 </div>
 <?php 		
 	}
 $close = mysqli_close($conn) 
