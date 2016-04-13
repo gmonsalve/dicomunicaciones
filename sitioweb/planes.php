@@ -130,7 +130,7 @@
                           <br /><p style="color: #ffffff" >Texto</p> <br />
                           
                         </div>
-                        <a href="#" class="btn btn-default text-right" style="color: #D02E10"><i class=""></i>Conoce mas aqui</a>
+                        <a href="../sitioweb/planes_voz_datos.php" class="btn btn-default text-right" style="color: #D02E10"><i class=""></i>Conoce mas aqui</a>
                    </div>
                 </div>                
               </div><!--Planes de Voz y datos-->

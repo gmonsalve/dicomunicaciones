@@ -104,7 +104,83 @@
 				<div class="category-tab"><!--category-tab-->
 					 <div class="tab-content">
 						<div class="tab-pane fade active in" id="tshirt" >
-							<?php include('planes2.php'); ?>   
+							<div class="col-sm-12">
+                <div class="col-sm-12"><h3 style="color: #D02E10; font-family: Roboto, sans-serif; font-size: 18px;"><center>Plan Sin Limites Prepago de Voz + Datos</center></h3></div>
+                <!---->
+                  <div class="col-sm-3">
+                    <h2 style="color: #D02E10; font-family: Roboto, sans-serif; font-size: 18px;"><center>Plan 50000</center></h2>
+                    <table class="table">
+                      <th><center>Intenso</center></th>
+                      <tr>
+                        <td><strong>Precio:</strong> $35.000</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Data:</strong> 1000 MB</td>
+                      </tr>
+                      <tr>
+                        <td><strong>minutos:</strong> 50000 seg.</td>
+                      </tr>
+                      <tr>
+                        <td><strong>elegidos:</strong> 5 elegidos para todo operador</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="col-sm-3">
+                    <h2 style="color: #D02E10; font-family: Roboto, sans-serif; font-size: 18px;"><center>Plan 35000</center></h2>
+                    <table class="table">
+                      <th><center>Diurno</center></th>
+                      <tr>
+                        <td><strong>Precio:</strong> $28.000</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Data:</strong> 9000 MB</td>
+                      </tr>
+                      <tr>
+                        <td><strong>minutos:</strong> 25000 seg.</td>
+                      </tr>
+                      <tr>
+                        <td><strong>elegidos:</strong> 4 elegidos para todo operador</td>
+                      </tr>
+                    </table>
+                  </div>
+                                    <div class="col-sm-3">
+                    <h2 style="color: #D02E10; font-family: Roboto, sans-serif; font-size: 18px;"><center>Plan 25000</center></h2>
+                    <table class="table">
+                      <th><center>Nocturno</center></th>
+                      <tr>
+                        <td><strong>Precio:</strong> $25.000</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Data:</strong> 800 MB</td>
+                      </tr>
+                      <tr>
+                        <td><strong>minutos:</strong> 5000 seg.</td>
+                      </tr>
+                      <tr>
+                        <td><strong>elegidos:</strong> 3 elegidos para todo operador</td>
+                      </tr>
+                    </table>
+                  </div>
+                                    <div class="col-sm-3">
+                    <h2 style="color: #D02E10; font-family: Roboto, sans-serif; font-size: 18px;"><center>Plan 15000</center></h2>
+                    <table class="table">
+                      <th><center>Sabatino</center></th>
+                      <tr>
+                        <td><strong>Precio:</strong> $8.000</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Data:</strong> 500 MB</td>
+                      </tr>
+                      <tr>
+                        <td><strong>minutos:</strong> 4000 seg.</td>
+                      </tr>
+                      <tr>
+                        <td><strong>elegidos:</strong> 1 elegidos para todo operador</td>
+                      </tr>
+                    </table>
+                  </div>
+                <!---->
+               </div> 
 						</div>	
 
 					</div>
