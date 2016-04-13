@@ -104,51 +104,7 @@
 				<div class="category-tab"><!--category-tab-->
 					 <div class="tab-content">
 						<div class="tab-pane fade active in" id="tshirt" >
-							<!--?php include('planes2.php'); ?-->   
-              <div class="col-sm-4">
-                <div class="product-image-wrapper" style="background: #D02E10">
-                  <h2 class="title text-center" style="color: #ffffff" >Planes de Voz</h2>
-                   <div class="single-products" >
-                        <div class="productinfo text-center">
-                          
-                          <img src="../sitioweb/images/product-details/planes_voz.png">
-                          <br /><p style="color: #ffffff" >Texto</p> <br />
-                          
-                        </div>
-                        <a href="../sitioweb/planes_voz.php" class="btn btn-default text-right" style="color: #D02E10"><i class=""></i>Conoce mas aqui</a>
-                   </div>
-                </div>
-              </div> <!--Planes de Voz-->
-              <div class="col-sm-4">
-                <div class="product-image-wrapper" style="background: #D02E10">
-                  <h2 class="title text-center" style="color: #ffffff">Planes de Voz y Datos</h2>
-                   <div class="single-products">
-                        <div class="productinfo text-center">
-                          
-                          <img src="../sitioweb/images/product-details/planes_voz_datos.png">
-                          
-                          <br /><p style="color: #ffffff" >Texto</p> <br />
-                          
-                        </div>
-                        <a href="#" class="btn btn-default text-right" style="color: #D02E10"><i class=""></i>Conoce mas aqui</a>
-                   </div>
-                </div>                
-              </div><!--Planes de Voz y datos-->
-              <div class="col-sm-4">
-                <div class="product-image-wrapper" style="background: #D02E10">
-                  <h2 class="title text-center" style="color: #ffffff">Planes de Datos</h2>
-                   <div class="single-products">
-                        <div class="productinfo text-center">
-                          
-                          <img src="../sitioweb/images/product-details/planes_datos.png">
-                          
-                          <br /><p style="color: #ffffff" >Texto</p> <br />
-                          
-                        </div>
-                        <a href="../sitioweb/planes_datos.php" class="btn btn-default" style="color: #D02E10"><i class=""></i>Conoce mas aqui</a>
-                   </div>
-                </div>
-              </div><!--Planesy paquetes de datos-->
+							<?php include('planes2.php'); ?>   
 						</div>	
 
 					</div>
